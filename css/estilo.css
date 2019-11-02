@@ -1,0 +1,1892 @@
+/* body  */
+html,body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.map 
+{
+    height: 100%;
+    width: 100%;
+    display: none;
+    min-height: 300px;
+    min-width: 300px;
+}
+
+/* formularios */
+.mensaje-input
+{
+    display:inline-block; 
+    width: 100px;
+}
+.input-text
+{
+    display: inline;
+    margin-bottom: 5px;
+    height: 20px;
+    border:solid 1px white;
+}
+input[type=text],input[type=password]
+{
+    border-radius: 5px;
+}
+select
+{
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    cursor: pointer;
+    -moz-appearance: none;
+    border-radius: 5px;
+    width: 156px;
+    height: 30px;
+    background: #FFFFFF url("../img/flecha-abajo.svg")no-repeat right;
+    background-size: 10px;
+    background-position: 130px, 0;
+    margin-top: 5px;
+}
+.button-succes
+{
+    text-align: center;
+    padding-top: 10px;
+    width: 120px;
+    height: 30px;
+    background-color: #0b41d3;
+}
+.button-succes:hover
+{
+    background-color: #00cccc;
+    cursor: pointer;
+}
+.enlace-succes
+{
+    font-size: 17px;
+    color:white;
+    text-decoration: none;
+}
+.contenedor-boton
+{
+    margin-left: 20%;
+    width: 80%;
+}
+.contenedor-loader
+{
+    margin-top: 20px;
+    margin-left: 50%;
+    width: 50%;
+}
+.contenedor-loader-intro
+{
+    margin-top: 20px;
+    margin-left: 50%;
+    width: 50%;
+}
+.contenedor-loaderCentral
+{
+    margin-top: 20%;
+    margin-left: 50%;
+    width: 65%;
+}
+/* menu */
+.opcion-menu
+{
+    background-color: #f9f9f9;
+    border-right: solid 2px #f9f9f9;
+    border-bottom: solid 1px #8a9cb2;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #8a9cb2;
+}
+.menu-salir
+{
+    display: none;
+}
+#arco{
+    z-index: 1;
+}
+
+.opcion-menu:hover
+{
+    color: white;
+    background-color: #8a9cb2;
+}
+.menu-activo
+{
+    background-color: #8a9cb2;
+    color: white;
+    border-right: solid 10px #257ABB;
+    cursor: initial;
+}
+.menu
+{
+    color: white;
+    width: calc(4% - 1px);
+    max-width: 55px;
+    height: calc(100% - 60px);
+    float: left;
+    display: inline;
+    border-right: solid 1px silver;
+    overflow-y: auto;
+}
+.contenido-menu
+{
+    padding-top: 5%;
+    width: calc(90% - 10px);
+    text-align: center;
+    display: none;
+}
+
+.img-menu
+{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.img-cancelar
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.cont-img-menu
+{
+   width: 10%;
+   height: 40px;
+   float: left;
+   margin-left: 10px;
+}
+
+.contenido-central
+{
+    width: 96%;
+    height: calc(100% - 60px);
+    float: left;
+    display: inline;
+    overflow-y: auto;
+}
+.cabecera
+{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+}
+.titulo
+{
+    float: left;
+    margin-top: 21px;
+    margin-left: 1%;
+    width: 10%;
+    height: 60%;
+    min-width: 200px;
+}
+.img-logo
+{
+    float: left;
+    margin-left: 1%;
+    margin-top: 16px;
+    width: 4%;
+    min-width: 50px;
+}
+.fecha
+{
+    float: right;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 1%;
+    width: 10%;
+    min-width: 120px;
+}
+.logOut
+{
+    float: right;
+    text-align: center;
+    line-height: 60px;
+    background-color: #999999;
+    width: 15%;
+    height: 60px;
+    min-width: 160px;
+}
+.pre-buscador
+{
+    display: inline-block;
+    width: 50px;
+}
+.buscador
+{
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+}
+.buscador_titulo
+{
+    width: 100%;
+    height: 35px;
+    background-color: #ecf0f1;
+    color: #0b41d3;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 35px;
+}
+.buscador-subtitulo
+{
+    font-size: 15px;
+    color: #0b41d3;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.contenedor-ubicacion
+{
+    padding-left: 15px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #8a9cb2;
+    height: auto;
+}
+.mensaje-error
+{
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+    color: red;
+    font-size: 12px;
+    text-align: center;
+}
+
+.img-van
+{
+    margin-left: 10%;
+}
+
+.contenedor-lateral
+{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: calc(100% - 50px);
+    border-right: solid 1px silver;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.contenedor-lateral-liq
+{
+    height: calc(100% - 0px) !important;
+}
+.contenedor-inicial
+{
+    position: relative;
+    width: 95%;
+    height: 175px;
+}
+.pie
+{
+    width: 100%;
+    border-top: solid 1px silver;
+    background-color: #ecf0f1;
+    height: 49px;
+}
+.pie_liquidacion
+{
+    padding-left: 20px;
+    position: relative;
+    width: 100%;
+    border-top: solid 1px silver;
+    background-color: #ecf0f1;
+    height: 50px;
+}
+.contenedor_central
+{
+    position: relative;
+    margin-left: 25%;
+    width: 75%;
+    height: calc(100% - 50px);
+}
+.contenedor_central_servicio
+{
+    position: relative;
+    margin-left: 20%;
+    width: calc(80% - 1px);
+    height: calc(100% - 0px);
+    overflow: auto;
+}
+.contenedor_central_reporte
+{
+    position: relative;
+    margin-left: 20%;
+    width: calc(80% - 1px);
+    height: calc(100% - 0px);
+    overflow: auto;
+}
+.monitoreo
+{
+    margin-left: 0 !important;
+    width: calc(75% - 1px) !important;
+    height: calc(100% - 0px);
+    float: left;
+    display: inline;
+}
+
+.monitoreo_buscador
+{
+    margin-left: 25% !important;
+    width: 74% !important;
+    height: calc(100% - 32px);
+}
+
+.asignacion_buscador
+{
+    margin-left: calc(37% - 24px);
+    width: calc(70% - 67px);
+    height: calc(100% - 1px);
+}
+
+.buscador-monitoreo
+{
+    height: calc(100% - 10px);
+    float: left;
+    display: inline;
+}
+
+.buscador-servicio
+{
+    width: 20%;
+    height: calc(100% - 10px);
+}
+
+.buscador-asignacion
+{
+    width: 35%;
+    height: 100%;
+}
+.buscador-asignacion-cliente
+{
+    width: 20%;
+    height: 100%;
+}
+.buscador-asignacion-cliente-pasajero
+{
+    width: calc(80% - 2px);
+    height: calc(50%);
+}
+.buscador-pasajero
+{
+    width: calc(24% - 1px);
+    height: 100%;
+    display: none;
+    min-width: 0 !important;
+}
+.mapa_bajo
+{
+    width: calc(42% - 16px) !important;
+    margin-left: calc(60% - 10px) !important;
+}
+.buscador-asignacion-boton
+{
+    border-top: solid 1px #8a9cb2;
+    margin-left: 4%;
+    width: 26%;
+}
+.buscador-asignacion-boton .boton
+{
+    width: 100px !important;
+}
+
+.tabla-central
+{
+    width: 100%;
+    height: calc(100%);
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.tablaContenido
+{
+    height: 300px;
+    overflow: auto;
+}
+.tr_titulo
+{
+    width: 100%;
+    background-color: #4e4e4e;
+    color: white;
+    text-align: center;
+}
+.tr_titulo th
+{
+    width: 10%;
+}
+
+.tr_contenido
+{
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.tabla-central td
+{
+    border: double 1px black;
+}
+
+.img-salir
+{
+    margin-top: 7px;
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.opcion-menu-cerrar
+{
+    background-color: orange;
+}
+
+.boton
+{
+    font-size: 12px;
+    color: white;
+    background-color: #a7b9bd;
+    text-align: center;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 80px;
+    height: 30px;
+    vertical-align: middle;
+    border: solid 1px #0099ff;
+    border-radius: 5px;
+    cursor:pointer;
+    line-height: 30px;
+}
+.btn-grande
+{
+    width: auto;
+}
+.boton-chico
+{
+    color: white;
+    background-color: #a7b9bd;
+    text-align: center;
+    margin-right: 5px;
+    width: 30px;
+    height: 25px;
+    vertical-align: middle;
+    border: solid 1px #0099ff;
+    cursor:pointer;
+    line-height: 25px;
+    display: inline-block;
+}
+.boton_en_linea
+{
+    margin-top: 5px;
+    float: right;
+}
+.boton:hover
+{
+    background-color: #c1d2d5;
+}
+.boton img
+{
+    position: relative;
+}
+.pie-left
+{
+    float: left;
+    width: 25%;
+    height: 49px;
+    padding-left: 20px;
+}
+.pie-center
+{
+    float: left;
+    width: 58%;
+    height: 49px;
+}
+.pie-right
+{
+    float: left;
+    width: 10%;
+    height: 49px;
+    padding-right: 20px;
+}
+
+.fila_contenedor
+{
+    font-size: 15px;
+    padding-left: 20px;
+    width: calc(100% - 20px);
+    height: 30px;
+    line-height: 30px;
+    border-bottom: solid 1px white;
+}
+.fila_contenedor:nth-child(even)
+{
+    background-color: #dfe8e8;    
+}
+.fila_contenedor:nth-child(odd)
+{
+    background-color: #ffffff;
+}
+.fila_contenedor:hover
+{
+    cursor: pointer;
+}
+.fila_contenedor_activa
+{
+    background-color: #cccccc;
+    font-weight: bold;
+}
+.contenedor-info
+{
+    border: solid 1px silver;
+    background-color: white;
+    height: calc(100% - 52px);
+    padding-top: 20px;
+    /*min-height: 460px;*/
+}
+
+.contenedor-info-servicio
+{
+    padding-top: 1px !important;
+}
+
+.dispose
+{
+    color: white !important;
+    cursor: pointer;
+    background-color: silver !important;
+    border-top: none !important;
+    border-bottom: solid 1px silver;
+}
+
+.contenedor_oculto
+{
+    display: none;
+}
+.titulo_pagina
+{
+    padding-left: 20px;
+    font-size: 20px;
+    color: #0099ff;
+    width: calc(100% - 20px);
+    height: 30px;
+    background-color: #ecf0f1;
+}
+.contenedor-titulo
+{
+    width: 100%;
+    height: 30px;
+}
+.titulo_pagina_general
+{
+    width: auto;
+    float: left;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    font-size: 17px;
+    color: #0099ff;
+    border-top: solid 2px #0099ff;
+    border-left: solid 1px silver;
+    border-right: solid 1px silver;
+    background-color: white;
+}
+.contenedor-pre-input
+{
+    font-size: 13px;
+    margin-top: 7px;
+    width: 185px;
+    height: 30px;
+    display: inline-block;
+}
+.contenedor-pre-input-conductor
+{
+    font-size: 13px;
+    margin-top: 7px;
+    width: 185px;
+    height: 29px;
+    display: inline-block;
+}
+.contenedor-pre-input-login
+{
+    width: 85px;
+}
+.contenedor-input
+{
+    margin-left: 5%;
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+}
+.contenedor-input-radio
+{
+    width: 208px !important;
+}
+.contenedor-input input
+{
+    margin-top: 5px;
+    padding-left: 10px;
+    height: 25px;
+}
+.contenedor-fila
+{
+    width: 420px;
+}
+.contenedor-formulario
+{
+    padding-left: 40px;
+    width: 39%;
+    display: inline-block;
+    float: left;
+}
+.contenedor-formulario_mapa
+{
+    margin-left: 50px;
+    width: 40%;
+    display: inline-block;
+    float: left;
+}
+.contenedor-img
+{
+    margin-left: 40px;
+    border: solid 1px silver;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    float: left;
+}
+.imagen
+{
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/usuario-hombre.svg');
+    background-position: center; 
+}
+.mensaje_bienvenida
+{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    color: #a7b9bd;
+}
+.contenedor-contrato
+{
+    margin-top: 100px;
+}
+
+.oculto
+{
+    visibility: hidden;
+}
+
+.file
+{
+    display: none;
+}
+
+.info
+{
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+.tabla-general
+{
+    position: relative;
+    width: 100%;
+    overflow-y: auto;
+    padding-top: 10px;
+}
+.tablaCabecera,.tablaFila,.tablaFilaInactiva
+{
+    width: 100%;
+    border-bottom: solid 1px #cccccc;
+}
+.tablaCabecera div
+{
+    width: 19%;
+    font-size: 15px;
+    color: #0099ff;
+    text-align: center;
+    height: 20px;
+    display: inline-block;
+
+}
+.tablaFila div
+{
+    width: calc(20% - 4px);
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    height: 20px;
+    display: inline-block;
+    border-left: solid 1px #cccccc;
+
+}
+.tablaFilaInactiva div
+{
+    width: calc(20% - 4px);
+    font-size: 15px;
+    color: #a7b9bd;
+    text-align: center;
+    height: 20px;
+    display: inline-block;
+    border-left: solid 1px #cccccc;   
+}
+.seleccionado
+{
+    background-color: #0099ff;
+}
+.seleccionado div
+{
+    color: white !important;
+}
+.no-seleccionado
+{
+    background-color: #ffffff;
+
+}
+.no-seleccionado div
+{
+    color: #a7b9bd;
+}
+
+.mensaje-info
+{
+    margin-left: 20px;
+    font-size: 12px;
+}
+.servicio
+{
+    background-color: white;
+}
+.servicio div
+{
+    width: 8%;
+}
+.contenedor-fila-servicio
+{
+    width: 28%;
+}
+
+.resultado_busqueda
+{
+    color: #0099ff;
+    width: 630px;
+}
+.sub-opcion:active
+{
+    background-color: #999999;
+}
+.sub-opcion
+{
+    cursor: pointer;
+    background-color: #cccccc;
+    border: solid 1px #0099ff;
+    text-align: center;
+    line-height: 200px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+.boton-izquierdo
+{
+    margin-left: 50px;
+    float: left;
+}
+.boton-derecho
+{
+    margin-right: 50px;
+    float: right;
+}
+.mensaje-eleccion
+{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.botones-eleccion
+{
+    width: 60%;
+    height: 200px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.titulo-asignar
+{
+    font-size: 15px;
+    color: #0099ff;
+    padding-right: 20px;
+}
+.titulo-asignar input
+{
+    margin-left: 20px;
+}
+.resultado-asignar
+{
+    padding-top: 10px;
+    width: 80%;
+}
+.contenedor-asignar
+{
+    padding-left: 20px;
+    width: 95%;
+}
+.cuadro_asignar
+{
+    padding: 10px;
+    width: 260px;
+    height: 50px;
+    border: solid 1px #0099ff;
+    background-color: #999999;
+    color: white;
+    cursor: pointer;
+}
+
+.cabecera_fila
+{
+    width: 20px !important;
+    padding-left: 20px;
+}
+
+.barra_monitoreo
+{
+    margin-left: 10% !important;
+}
+
+.barra_asignacion
+{
+    margin-left: 4% !important;
+}
+.input-monitoreo-2
+{
+    width: 300px;
+    display: inline-block;
+}
+.input-monitoreo
+{
+    width: 100%;
+    /*display: inline-block;*/
+}
+.input-monitoreo .boton
+{
+    width: 100px !important;
+}
+.input-monitoreo #dibujar
+{
+    margin-left: 50px;
+    width: 150px !important;
+}
+
+.cont-pre-monitor
+{
+    width: 200px !important;
+}
+.boton-monitoreo
+{
+    float: none;
+}
+
+.enlace-salir
+{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    
+}
+.menu-telefono
+{
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    display: none;
+    cursor:pointer;
+}
+
+.pac-container
+{
+    width: 400px !important;
+}
+.input_asignar
+{
+    width: 70% !important;
+    height: 25px !important;   
+}
+.input_asignar_origen
+{
+    width: 50% !important;
+    height: 25px !important;   
+    margin-bottom: 10px;
+}
+.titulo_origen{
+    font-weight: bold;
+    margin-left: 20px;
+    width: 65px;
+    display: inline-block;
+}
+.input_asignar_editar
+{
+    position: relative;
+    width: 330px;
+    height: 25px;   
+}
+.input_asignar_agregar
+{
+    position: relative;
+    width: 135px;
+    height: 20px;   
+}
+.input_asignar_agregar_grande
+{
+    position: relative;
+    width: 335px;
+    height: 20px;   
+}
+.input_cliente
+{
+    width: 90% !important;
+    height: 25px !important;   
+}
+
+.select_asignar
+{
+    width: 70% !important;
+    height: 30px !important;
+    background-position: 125px, 0 !important;
+}
+.select_asignar_cliente
+{
+    width: 130% !important;
+    height: 30px !important;
+    background-position: 170px, 0 !important;
+}
+
+.textarea_asignar
+{
+    width: 90%;
+    min-width: 192px;
+    max-width: 90%;
+    height: 90px; 
+    min-height: 90px; 
+    max-height: 90px; 
+    border-radius: 5px;
+    border: solid 1px silver;
+}
+
+.textarea_asignar2
+{
+    width: 75%;
+    min-width: 192px;
+    max-width: 300px;
+    height: 50px; 
+    min-height: 50px; 
+    max-height: 50px; 
+    border-radius: 5px;
+    border: solid 1px silver;
+}
+
+.contenedorPartida
+{
+    height: auto;
+}
+.datalist-visible {
+    position:absolute;
+    display: block;
+    background-color: white;
+    width: 370px;
+    transform: translate(-55%);
+}
+.datalist-invisible {
+    position:absolute;
+    display: none;
+    background-color: white;
+    width: 300px;
+}
+.option-datalist
+{
+    padding-top: 10px;
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    border-bottom: solid 1px silver;
+}
+.option-datalist:hover
+{
+    background-color: #ecf0f1;
+}
+
+.option-datalist img
+{
+    margin: 1px;
+}
+
+.titulo_servicios_pendientes
+{
+    width: 30px;
+    height: 200px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #8a9cb2;
+    color: white;
+    writing-mode: vertical-lr;
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    top:130px;
+    left: calc(100% - 30px)
+}
+
+.servicios_pendientes
+{
+    width: 300px;
+    height: calc(100% - 60px);
+    overflow-y: scroll;
+    text-align: center;
+    background-color: #FFFFFF;
+    position: absolute;
+    top:60px;
+    left:calc(100% - 315px);
+    float: right;
+    z-index: 2;
+}
+.contenedor_servicios
+{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    color: red;
+}
+.pendiente{
+    font-size: 13px;
+}
+.pendiente img{
+    float: right;
+    margin-right: 10px;
+    margin-top: -30px;
+    display: inline;
+}
+
+.opcion_servicios
+{
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.opcion-agregar
+{
+    width: 100%;
+    font-weight: bold;
+    font-size: 25px;
+    color: #0b41d3;
+    text-align: center;
+    display: none;
+}
+
+.radio-tipo
+{
+    transform:scale(1.2);
+}
+
+.contenedor-boton-siguiente
+{
+    padding-top: 30px;
+    padding-left: 40%;
+    padding-right: 40%;
+    display: none;
+    width: 20%;
+}
+.opcion-volver
+{
+    cursor: pointer;
+    float: right;
+    padding-right: 30px;
+}
+
+.contenor-centro-costo
+{
+    height: 400px;
+    overflow: auto;
+    width: 100%;
+}
+.contenedor-fila-cc
+{
+    width: 450px !important;
+    height: calc(100% - -400px);
+}
+
+.modificado
+{
+    height: calc(56% - 290px);
+}
+
+.btn-menu
+{
+    float: left;
+    margin-left: 1%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.tooltip
+{
+    position:absolute;
+    width: 140px;
+    height: 35px;
+    background-color:#cccccc;
+    left:70px;
+    z-index: 2; 
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    display: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.tooltip:before
+{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: -50px;
+    top: -10px;
+    height: 0;
+    border-right: 20px solid #cccccc;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+	margin: 24px 0 0 32px;
+}
+.cont-pasajero-gral
+{
+    border-bottom: solid 1px silver;
+    cursor: pointer;
+    height:50px;
+}
+.cont-pasajero-gral:hover
+{
+    background-color: #cccccc;
+}
+.cont-pasajero
+{
+    width: 70%;
+    margin-left: 2%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cont-mini-pasajero
+{
+    width: 70%;
+    margin-left: 5%;
+    font-size: 12px;
+}
+.img-estado-ok
+{
+ width:10px;
+ height:10px;
+ background-color:green;   
+ border-radius: 100%;
+ display: inline-block;
+ margin-right: 20px;
+}
+.img-estado-no
+{
+ width:10px;
+ height:10px;
+ background-color:red;   
+ border-radius: 100%;
+ display: inline-block;
+  margin-right: 20px;
+
+}
+.visor_pdf
+{
+    width: calc(100% - 1px);
+    height: calc(100% - 3px);
+}
+.contenedor_contrato
+{
+    margin-left: 25%;
+    width: calc(75% - 1px);
+    height: calc(100% - 3px);
+}
+
+.liquidacion{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo_liquidacion
+{
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+.subtitulo_liquidacion
+{
+    font-size: 14px;
+    border-top: solid 1px silver;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+}
+.datos_conductor
+{
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5%;
+    width: 95%;
+}
+.titulo_tabla_liq
+{
+    border: solid 1px silver;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    float: left;
+}
+.contenido_tabla_liq
+{
+    width: calc(25% - 3px);
+    height: calc(100% - 100px);
+    border: solid 1px silver;
+    float: left;
+}
+.detalle_tabla_liq
+{
+    font-weight: bold;
+    border: solid 1px silver;
+    width: calc(50% - 2px);
+    float: left;
+}
+.contenedor_liquidacion
+{
+    height: calc(100% - 101px);
+}
+
+.conductores
+{
+    font-size: 14px;
+    width: 190px;
+    height: 30px;
+    margin-top: 35px;
+}
+
+.contenedor-dashboard
+{
+    padding-top: 40px;
+    float: left;
+    width: 80%;
+    height: calc(100% - 40px);
+}
+.contenedor-dashboard-cliente
+{
+    padding-top: 40px;
+    float: left;
+    width: 100%;
+    height: calc(100% - 40px);
+}
+.contenedor-servicios
+{
+    float: left;
+    width: 20%;
+    height: calc(100% - 0px);
+}
+.checkbox-oculto
+{
+    visibility: hidden;
+}
+
+.contenedor_contrato_movil
+{
+    float: right;
+    margin-top: -30px   
+}
+
+#servicio-especial
+{
+    display: none;
+}
+
+.radio-asignar
+{
+    margin-left: 10px;
+}
+
+.contenedor_punto_encuentro
+{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.indicador-dashboard
+{
+    float: left;
+    margin: 8px;
+    width: 30%;
+    background-color: white;
+    height: 200px;
+    border: solid 1px silver;
+    min-width: 300px;
+}
+.indicador-titulo
+{
+    width: 100%;
+    height: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.indicador-valor
+{
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    height: calc(100% - 20px);
+    line-height: 140px;
+}
+.indicador-valor2
+{
+    width: 100%;
+    font-size: 60px;
+    height: calc(100% - 20px);
+}
+.indicador-valor-mitad
+{
+    width: 50%;
+    font-size: 60px;
+    text-align: center;
+    height: 100px;
+    line-height: 140px;
+    float: left;
+}
+.ruta
+{
+    color: blue;
+}
+.asignar
+{
+    color: orange;
+}
+.realizar
+{
+    color: green;
+}
+.finalizado
+{
+    color: black;
+}
+
+.contenedor_central_titulo
+{
+    width: calc(100% - 1px);
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    margin-left: 1px;
+}
+.contenedor_central_titulo_conductor
+{
+    width: calc(100% - 1px);
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    margin-left: 1px;
+}
+.contenedor_central_titulo_pasajero
+{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+}
+.contenedor_central_titulo_tarifa
+{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+}
+.contenedor_central_titulo div
+{
+    font-size: 17px;
+    color:#0099ff;
+    float: left;
+    width: 19%;
+    text-align: center;
+}
+.contenedor_central_titulo_conductor div
+{
+    font-size: 17px;
+    color:#0099ff;
+    float: left;
+    width: 19%;
+    text-align: center;
+}
+.contenedor_central_titulo_pasajero div
+{
+    font-size: 17px;
+    color:#0099ff;
+    float: left;
+    width: 15%;
+    text-align: center;
+}
+.contenedor_central_titulo_tarifa div
+{
+    font-size: 17px;
+    color:#0099ff;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.fila_contenedor_servicio
+{
+    padding: 0 !important;
+    width: calc(100% - 1px) !important;
+    margin-left: 1px;
+}
+.fila_contenedor_conductor
+{
+    padding: 0 !important;
+    width: calc(100% - 1px) !important;
+    margin-left: 1px;
+}
+.fila_contenedor_pasajero
+{
+    padding: 0 !important;
+    width: 100% !important;
+}
+.fila_contenedor_servicio div
+{
+    float: left;
+    width: 19%;
+    text-align: center;    
+}
+.fila_contenedor_conductor div
+{
+    float: left;
+    width: 19%;
+    text-align: center;    
+}
+.fila_contenedor_pasajero div
+{
+    float: left;
+    width: 15%;
+    text-align: center;    
+}
+
+.fila_contenedor_tarifa_detalle
+{
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.fila_contenedor_tarifa_detalle div
+{
+    float: left;
+    width: 20%;
+    text-align: center;    
+}
+
+.info-servicio
+{
+    height: calc(100% - 140px) !important
+}
+.info-servicio-mapa
+{
+    padding-top: 0 !important;
+    height: calc(100% - 115px);
+}
+    
+.contenedor_mapa
+{
+    width: 100%;
+    height: 100%;
+}
+
+.img_volver
+{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.pie-servicio
+{
+    margin-top: 15%;
+    width: 200%;
+    background-color: #ecf0f1;
+}
+.pie-tarifa
+{
+    width: 100%;
+    background-color: #ecf0f1;
+    height: 50px;
+    display: none;
+}
+
+.btn-eliminar
+{
+    float: right;
+}
+
+.titulo_pasajero
+{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ecf0f1;
+    color: #0099ff;
+}
+.titulo_pasajero div
+{
+    text-align: center;
+    width: 25%;
+    float: left;
+    font-size: 17px;
+}
+.pasajeros_contenido
+{
+    width: 100%;
+    height: calc(100% - 50px);
+    line-height: 50px;
+    background-color: #f9f9f9;
+}
+
+.pasajeros_contenido div
+{
+    text-align: center;
+    width: 25%;
+    float: left;
+    font-size: 15px;
+}
+
+.pendiente
+{
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+}
+.pendiente:nth-child(even)
+{
+    background-color: #dfe8e8;    
+}
+.pendiente:nth-child(odd)
+{
+    background-color: #ffffff;
+}
+
+.contenedor-conf
+{
+
+  height: calc(100% - 0px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-cont-conf
+{
+    background-color: white;
+    padding: 2%;
+    width: 36%;
+    border: solid 1px silver;
+}
+
+.extenso
+{
+    height: calc(100% - 0px);
+}
+
+.pie-extenso
+{
+    height: 49px;
+}
+
+.lista_busqueda_extendida
+{
+    height: calc(100% - 0px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.lista_busqueda_extendida_tarifa
+{
+    height: calc(100% - 62px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.total
+{
+    height: calc(100% - 0px);
+}
+
+.tarifa_cont
+{
+    padding-top: 1px !important;
+    height:calc(100% - 63px) !important;
+    min-height: 0 !important;
+}
+.tarifa_cont_cliente
+{
+    padding-top: 1px !important;
+    height:calc(100% - 112px);
+    min-height: 0 !important;
+}
+
+.input-panel
+{
+    width: 100%;
+}
+
+.contenedor-panel
+{
+    width: 49%;
+    display: inline-block
+}
+.contenedor-panel-completo
+{
+    float: left;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.pasajero_mapa
+{
+    width:100%;
+    height: 450px;
+}
+
+.recargado
+{
+    margin-left: 0 !important;
+    width: 226px !important;
+}
+
+.check_pasajero
+{
+    width: 5% !important;
+}
+.letra_pasajero
+{
+    width:10px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.dato_pasajero
+{
+    width: 10% !important;
+}
+.dir_pasajero
+{
+    width: 44% !important;
+}
+.est_pasajero
+{
+    width: 27% !important;
+}
+
+.nombre_pasajero
+{
+    width: 17% !important;
+}
+.contenedor_editar
+{
+    padding-top: 20px;
+    padding-left: 40px;
+    display: none;
+    width: 38%;
+    margin-left: 59%;
+    height: 50px;
+    background-color: #ecf0f1;
+    border-bottom: solid 1px silver;
+}
+.contenedor_agregar
+{
+    padding-top: 20px;
+    padding-left: 40px;
+    display: none;
+    width: 38%;
+    margin-left: 59%;
+    height: 120px;
+    background-color: #ecf0f1;
+    border-bottom: solid 1px silver;
+}
+.contenedor_agregar div
+{
+    margin-top: 5px;
+}
+
+.mapa_editar
+{
+    height: calc(100% - 71px);
+}
+.mapa_agregar
+{
+    height: calc(100% - 141px);
+}
+#servicios_pendientes_link
+{
+    display: none;
+}
+
+#vConvenio,#vGanCC,#vCantCC
+{
+    font-size: 12px;
+}
+#vConvenio div,#vGanCC div,#vCantCC div
+{
+    height: 20px;
+}
+
+.contenedor_agente
+{
+    height: calc(100% - 81px);
+}
+
+.barra,.barra2
+{
+    height: 10px !important;
+    background-color:green;
+    display: inline-block;
+}
+.titulo_barra
+{
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 50px;
+    display: inline-block; 
+}
+.fin_barra
+{
+    margin-left: 3%;
+    margin-right: 3%;
+    display: inline-block; 
+}
+
+.cont-tarifa
+{
+    height: calc(100% - 82px);
+}
+
+#contenido_tabla_liq_prod,#contenido_tabla_liq_desc,#contenido_tabla_liq_rend
+{
+    font-weight: bold ;
+    margin-top: 10px;
+    width: 100%;
+    height: calc(100% - 10px);
+    min-height: 345px;
+}
+
+.liquidacion_item
+{
+    margin-left: 10%;
+    width: 65%;
+    float:left;
+}
+.liquidacion_valor
+{
+    width:25%;
+    float:left;
+}
+.detalle_total
+{
+    padding-left: 20px;
+    float: left;
+}
+.detalle_total_val
+{
+    float: right;
+    padding-right: 20px;
+}
+
+.item_reporte
+{
+    width: 60% !important;
+    cursor: initial !important;
+}
+.total_reporte
+{
+    width: 30% !important;
+}
+
+.lista_busqueda_liq
+{
+    height: calc(100% - 204px);
+    overflow: auto;
+}
+
+#botonCancelar
+{
+    display: none;
+}
+
+.valor_titulo
+{
+    display: inline;
+}
+
+.buscador-cliente
+{
+    display: inline;
+    float: right;
+}
+
+.contenedor_sub_liquidacion
+{
+    display: inline;
+    width: 74%;
+    height: calc(100% - 15px);
+    float:left;
+}
+
+.contenedor_produccion_liquidacion
+{
+    border:solid 1px silver;
+    width: 33%;
+    height: calc(100% - 65px);
+    float: left;
+}
+.contendor-titulo-liq
+{
+    width: 75%;
+    margin-left: 25%;
+    height: auto;
+}
+
+.none{
+    display: none;
+}
+
+.tabla-mail{
+    font-size: 12px;
+    width: 100%;
+    height: auto;
+    border : 0px;
+}
+
+.tabla-mail tr{
+     border : 0px;
+}
+.tabla-mail tr td{
+     text-align: center;
+}

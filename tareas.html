@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/tareas.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <table id="tabla_ventas" class="tabla-mail">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOMBRE</th>
+                    <th>DESCRIPCIÓN</th>
+                    <th>STATUS</th>
+                    <th>FECHA CREACIÓN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div>
+            <input type="hidden" id="id">
+            Nombre: 
+            <input type="text" id="nombre">
+            Descripcion: 
+            <input type="text" id="descripcion">
+            Status:
+            <select id="status">
+                <option value="0">Pendiente</option>
+                <option value="1">Finalizado</option>
+            </select>
+            <a id="agregar" href="javascript:void(0)">Agregar</a>
+            <a id="cancelar" href="javascript:void(0)" style="visibility:  hidden;">Cancelar</a>
+        </div>
+    </body>
+</html>
